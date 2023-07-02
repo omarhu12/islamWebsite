@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./nav.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./animation.css" />
+    <link rel="stylesheet" href="./calculator.css" />
+    <script defer src="./app.js"></script>
+  </head>
+  <body>
+    <header>
+      <a href="./index.html"
+        ><img src="./Red Black Minimalist Fitness Logo .svg" alt=""
+      /></a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./pricing.html">pricing</a></li>
+          <li><a href="./calculator.html">Calculator</a></li>
+          <li><a href="./transformation.html">transformation</a></li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
+    </header>
+    <main>
+      <section id="BMR">
+        <h1>BMR <span>Calculator</span></h1>
+        <div class="bmr-calculator">
+          <div class="controls">
+            <form>
+              <div class="age inputSpace">
+                <h3>Age</h3>
+                <input type="text" id="age" value="28" />
+              </div>
+              <div class="gender inputSpace">
+                <h3>Gender</h3>
+                <input
+                  type="radio"
+                  id="male"
+                  value="male"
+                  name="gender"
+                  checked
+                />
+                <label for="male">Male</label>
+                <input type="radio" id="female" value="female" name="gender" />
+                <label for="female">Female</label>
+              </div>
+              <div class="height inputSpace">
+                <h3>Height</h3>
+                <input type="text" id="height" value="180" />
+                <div class="unit">cm</div>
+              </div>
+              <div class="weight inputSpace">
+                <h3>weight</h3>
+                <input type="text" id="weight" value="65" />
+                <div class="unit">kg</div>
+              </div>
+            </form>
+          </div>
+          <div class="result">
+            <button class="calculate-btn">Calculate</button>
+            <h4 class="result-message">
+              <span class="calories">1,640</span> Calories
+            </h4>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

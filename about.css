@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+main {
+  position: relative;
+  height: 100vh;
+}
+
+section#aboutPage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 100vh;
+  align-items: center;
+  width: 75%;
+}
+
+section#aboutPage div.aboutContent {
+  width: 40%;
+}
+
+section#aboutPage div.aboutContent h1 {
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+section#aboutPage div.aboutContent p {
+  font-weight: lighter;
+  margin-top: 2rem;
+  text-transform: capitalize;
+  line-height: 151%;
+  opacity: 0.8;
+}
+img {
+  width: 35%;
+  /* height: 100%; */
+}
+
+@media screen and (max-width: 1200px) {
+  section#aboutPage div.aboutContent {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  section#aboutPage div.aboutContent {
+    width: 100%;
+  }
+  section#aboutPage div.aboutContent {
+    text-align: center;
+  }
+  main {
+    height: fit-content;
+  }
+  section#aboutPage {
+    top: 0;
+    left: 0;
+    justify-content: center;
+    width: 90%;
+    margin: 2rem auto;
+    transform: translate(0%, 0%);
+    flex-direction: column-reverse;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  section#aboutPage div.aboutContent {
+    width: 100%;
+  }
+  section#aboutPage div.aboutContent h1 {
+    font-size: 1.5rem;
+  }
+
+  section#aboutPage div.aboutContent p {
+    margin-top: 1rem;
+    font-size: small;
+  }
+}

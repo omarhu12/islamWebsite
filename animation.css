@@ -1,0 +1,78 @@
+section#mainOffer div.CTAsection div.CTAaction {
+  height: 100vh;
+}
+
+@media screen and (max-width: 1065px) {
+  .lastCTA .lastCTAContent {
+    width: 100%;
+  }
+  .lastCTA .lastCTAContent p {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  section#mainOffer div.CTAsection div.CTAaction {
+    justify-content: center;
+    gap: 4rem;
+  }
+  .heroContent {
+    width: 100%;
+  }
+  div.heroContent h1 {
+    font-size: 3rem;
+    margin: .5rem;
+  }
+  div.heroContent p {
+    font-size: 1.2rem;
+  }
+  button.CTA {
+    font-size: medium;
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 665px) {
+  .lastCTA {
+    padding: 3rem 2rem;
+  }
+  .lastCTA .lastCTAContent {
+    width: 100%;
+  }
+  .lastCTA .lastCTAContent p {
+    font-size: 1.2rem;
+    line-height: 110%;
+    font-weight: 100;
+    width: 100%;
+  }
+}
+
+#BMR {
+  height: 100vh;
+}
+
+@media screen and (max-width: 390px) {
+  .lastCTA .lastCTAHeading h1 {
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0;
+  }
+  .lastCTA .lastCTAContent {
+    width: 100%;
+  }
+  .lastCTA .lastCTAContent p {
+    font-weight: 100;
+    letter-spacing: 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    width: 100%;
+  }
+  div.heroContent h1 {
+    font-size: 2.4rem;
+  }
+
+  #BMR {
+    height: 140vh;
+  }
+}

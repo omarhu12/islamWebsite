@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+main {
+  position: relative;
+  height: 120vh;
+}
+
+section#plans {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: fit-content;
+  width: 90%;
+}
+
+section#plans h1 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  line-height: 151.5%;
+  letter-spacing: -0.05em;
+}
+
+section#plans h1 span {
+  color: #ffe600;
+}
+section#plans div.planswrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  align-items: center;
+}
+
+section#plans div.planswrapper div.plansItems {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: #181c1d;
+  padding: 4rem 4rem;
+}
+
+section#plans div.planswrapper div.customPlan {
+  background-color: #ffe600;
+  color: black;
+}
+
+section#plans div.planswrapper div.plansItems h2 {
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 151.5%;
+  /* identical to box height, or 100px */
+  font-weight: 900;
+
+  letter-spacing: -0.085em;
+  text-transform: capitalize;
+
+  color: #ffffff;
+}
+section#plans div.planswrapper div.customPlan h2 {
+  color: black;
+}
+
+section#plans div.planswrapper div.plansItems span {
+  font-size: 3rem;
+  text-align: center;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid white;
+  font-weight: 900;
+}
+
+section#plans div.planswrapper div.customPlan span {
+  border-bottom: 2px solid black;
+}
+
+section#plans div.planswrapper div.plansItems ul li {
+  list-style: none;
+  font-size: 1.2rem;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "Roboto";
+  padding-top: 0.4rem;
+  font-weight: 100;
+}
+
+section#plans div.planswrapper div.plansItems button.CTAplan {
+  padding: 1rem 4rem;
+  margin-top: 2rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.015em;
+  border: none;
+}
+
+section#plans div.planswrapper div.customPlan button.CTAplan {
+  background-color: black;
+  color: white;
+}
+
+@media screen and (max-width: 1300px) {
+  main {
+    height: 200vh;
+  }
+}
+@media screen and (max-width: 920px) {
+  main {
+    height: 290vh;
+  }
+  section#plans {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    height: 280vh;
+  }
+  section#plans div.planswrapper div.plansItems button.CTAplan {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 430px) {
+  section#plans h1 {
+    font-size: 2rem;
+  }
+  section#plans div.planswrapper div.plansItems button.CTAplan {
+    font-size: 0.5rem;
+    letter-spacing: 0;
+    padding: 1rem 2rem;
+  }
+  section#plans div.planswrapper div.plansItems h2 {
+    font-size: 1.5rem;
+  }
+}
